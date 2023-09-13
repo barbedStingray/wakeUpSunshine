@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="client.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Wake Up, Sunshine!</h1>
+    </header>
+    <main>
+            <h3>It's a great morning to set your goals!</h3>
+    
+    <form onsubmit="addToDoItem(event)">
+
+        <div id="addition-box">
+            <label>Add Item to List:
+            <input type="text" id="todo-input" placeholder="What is your goal?"/></label>
+            <button onClick="">Add ToDo
+            </button>
+        </div>
+
+    </form>
+    
+        <div id="todo-list">
+            <!-- input your todo list here -->
+        </div>
+
+    </main>
+
+</body>
+</html>
