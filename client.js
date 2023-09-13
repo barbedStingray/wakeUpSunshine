@@ -71,7 +71,7 @@ function priorityItem(event) {
 // *********** MULTISTEP TO DO ITEMS ****************
 function addMultiStep(event) {
     console.log(`in addMultiStep`);
-    let multiStepDiv = document.querySelector(`#multi-div`);
+    let multiStepDiv = event.target.parentElement.querySelector(`#multi-div`);
     multiStepDiv.innerHTML += `
     <div class="multi-step">
 
@@ -87,7 +87,7 @@ function addMultiStep(event) {
 
 function addMultiParts(event) {
     console.log(`in addMultiParts`);
-    let multiBuilderDiv = document.querySelector(`#multiBuilder-div`);
+    let multiBuilderDiv = event.target.parentElement.parentElement.parentElement.querySelector(`#multiBuilder-div`);
 
     multiBuilderDiv.innerHTML += `
     <div id=checkbox>
